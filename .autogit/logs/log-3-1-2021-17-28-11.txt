@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Wed Feb 03 2021 17:28:11 GMT+0300 (East Africa Time)
+------------------------------------------------------
+
+Modified files:
+
+
+Created files:
+* .autogit/autogit.json
+
+
+Deleted files:
+* lib/Views/commitfileDemo
+
+
+Renamed files:
