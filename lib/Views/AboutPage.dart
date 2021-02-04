@@ -87,13 +87,21 @@ class _AboutPageState extends State<AboutPage> {
                 },
               ),
             ),
-            // GetX<CartController>(builder: (controller) {
-            //   return Text(
-            //     'Total amount: \$ ',
-            //     style: TextStyle(fontSize: 32, color: Colors.black),
-            //   );
-            // }),
-            // SizedBox(height: 50),
+            // GetBuilder<CartController>(
+            //   builder: (controller) {
+            //     return Text(
+            //       'Total amount: \$ ${controller.testAmount}',
+            //       style: TextStyle(fontSize: 32, color: Colors.black),
+            //     );
+            //   },
+            // ),
+            Obx(() {
+              return Text(
+                'Total amount: \$ ${cartController.totalPrice}',
+                style: TextStyle(fontSize: 32, color: Colors.black),
+              );
+            }),
+            SizedBox(height: 25),
           ],
         ),
       ),
