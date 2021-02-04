@@ -18,7 +18,7 @@ class _HomeState extends State<Home> {
     new NoteModel("4", "Fourth List", "This is the Fourth List", "4/20/2021"),
     new NoteModel("5", "Fifth List", "This is the Fifth List", "5/20/2021"),
   ];
-  Future<MakeUpModel> api_manager;
+  Future<List<MakeUpModel>> api_manager;
   @override
   void initState() {
     api_manager = Api_Manager().getMekups();
@@ -34,12 +34,12 @@ class _HomeState extends State<Home> {
         centerTitle: true,
       ),
       body: Container(
-        child: FutureBuilder<MakeUpModel>(
+        child: FutureBuilder<List<MakeUpModel>>(
           future: api_manager,
           builder: (context, snapshoot) {
             if (snapshoot.hasData) {
               return ListView.builder(
-                itemCount: snapshoot.data.id,
+                itemCount: snapshoot.data.length,
                 itemBuilder: (context, index) {
                   var mekupId = snapshoot.data;
                   return Container(
@@ -54,7 +54,7 @@ class _HomeState extends State<Home> {
                           ),
                           child: AspectRatio(
                             aspectRatio: 1,
-                            child: Image.network(mekupId.imageLink,
+                            child: Image.network(mekupId[index].imageLink,
                                 fit: BoxFit.cover),
                           ),
                         ),
