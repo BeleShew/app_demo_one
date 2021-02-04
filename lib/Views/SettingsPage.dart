@@ -10,7 +10,7 @@ class SettingsPage extends StatefulWidget {
 }
 
 class _SettingsPage extends State<SettingsPage> {
-  //final settingBuilder = Get.put(DialogController());
+  final settingBuilder = Get.put(DialogController());
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -33,7 +33,16 @@ class _SettingsPage extends State<SettingsPage> {
               //     style: TextStyle(fontSize: 32, color: Colors.black),
               //   );
               // }),
-              Obx(() => Text("obx")),
+              Expanded(
+                child: Center(
+                  child: GetX<DialogController>(
+                    builder: (controllers) {
+                      return Text('controllers.count.toString()');
+                    },
+                  ),
+                ),
+              ),
+
               SizedBox(height: 25),
             ],
           ),
