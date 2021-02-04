@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Thu Feb 04 2021 09:24:08 GMT+0300 (East Africa Time)
+------------------------------------------------------
+
+Modified files:
+* pubspec.yaml
+
+
+Created files:
+* .autogit/logs/log-4-1-2021-8-54-2.txt
+* lib/Controller/GetXDemoController.dart
+
+
+Deleted files:
+
+
+Renamed files:
