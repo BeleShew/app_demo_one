@@ -1,5 +1,7 @@
+import 'package:Flutter/Controller/GetXDemoController.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class AboutPage extends StatefulWidget {
   State<StatefulWidget> createState() {
@@ -8,6 +10,7 @@ class AboutPage extends StatefulWidget {
 }
 
 class _AboutPageState extends State<AboutPage> {
+  final productList = Get.put(GetxDemoClass());
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -15,15 +18,24 @@ class _AboutPageState extends State<AboutPage> {
         title: Text('About'),
         centerTitle: true,
       ),
-      body: Center(
+      body: SafeArea(
         child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: <Widget>[
-            Text("About Page"),
-            RaisedButton.icon(
-              onPressed: () {},
-              label: Text("Click Me"),
-              icon: new Icon(Icons.offline_bolt_sharp),
+          children: [
+            Expanded(
+              child: GetX<GetxDemoClass>(
+                builder: (controler) {
+                  return ListView.builder(
+                    itemBuilder: (context, index) {
+                      return Card(
+                        margin: const EdgeInsets.all(12),
+                        child: Padding(
+                          padding: const EdgeInsets.all(16.0),
+                        ),
+                      );
+                    },
+                  );
+                },
+              ),
             )
           ],
         ),
