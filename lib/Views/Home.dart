@@ -58,6 +58,14 @@ class _HomeState extends State<Home> {
                                 fit: BoxFit.cover),
                           ),
                         ),
+                        Card(
+                          child: Column(
+                            children: <Widget>[
+                              Text(mekupId[index].name),
+                              Text(mekupId[index].description),
+                            ],
+                          ),
+                        )
                       ],
                     ),
                   );
