@@ -35,8 +35,39 @@ class _HomeState extends State<Home> {
         centerTitle: true,
       ),
       body: Container(
-        child: FutureBuilder(
-          builder: (context, snapshoot) {},
+        child: FutureBuilder<MakeUpModel>(
+          future: api_manager,
+          builder: (context, snapshoot) {
+            if (snapshoot.hasData) {
+              return ListView.builder(
+                itemCount: snapshoot.data.id,
+                itemBuilder: (context, index) {
+                  var mekupId = snapshoot.data;
+                  return Container(
+                    height: 50,
+                    color: Colors.amber,
+                    child: Row(
+                      children: <Widget>[
+                        Card(
+                          clipBehavior: Clip.antiAlias,
+                          shape: RoundedRectangleBorder(
+                            borderRadius: BorderRadius.circular(10),
+                          ),
+                          child: AspectRatio(
+                            aspectRatio: 1,
+                            child: Image.network(mekupId.imageLink,
+                                fit: BoxFit.cover),
+                          ),
+                        ),
+                      ],
+                    ),
+                  );
+                },
+              );
+            } else {
+              return Center(child: CircularProgressIndicator());
+            }
+          },
         ),
       ),
       // body: ListView.separated(
