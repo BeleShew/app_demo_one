@@ -1,0 +1,22 @@
+-------------------- Auto-Git Log --------------------
+		Thu Feb 04 2021 15:20:14 GMT+0300 (East Africa Time)
+------------------------------------------------------
+
+Modified files:
+* lib/Controller/DialogController.dart
+* lib/Views/SettingsPage.dart
+* pubspec.lock
+* pubspec.yaml
+
+
+Created files:
+* .autogit/logs/log-4-1-2021-14-50-7.txt
+* lib/Models/MeakUpModel
+* lib/Services/API_Manager.dart
+* lib/keys/keys.dart
+
+
+Deleted files:
+
+
+Renamed files:

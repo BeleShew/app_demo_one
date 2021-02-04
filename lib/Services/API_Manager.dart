@@ -1,9 +1,10 @@
 import 'dart:convert';
 import 'package:http/http.dart' as http;
 import 'package:Flutter/keys/keys.dart';
+import 'package:Flutter/Models/MakeUpModel.dart';
 
 class Api_Manager {
-  Future<NewsModel> getNews() async {
+  Future<MakeUpModel> getMekups() async {
     var client = http.Client();
     var newsModel;
 
@@ -13,7 +14,7 @@ class Api_Manager {
         var jsonString = response.body;
         var jsonMap = json.decode(jsonString);
 
-        newsModel = NewsModel.fromJson(jsonMap);
+        newsModel = MakeUpModel.fromJson(jsonMap);
       }
     } catch (Exception) {
       return newsModel;
