@@ -13,9 +13,9 @@ class Api_Manager {
       if (response.statusCode == 200) {
         var jsonString = response.body;
         // var jsonMap = json.decode(jsonString);
-        List<dynamic> jsons = JsonDecoder().convert(jsonString);
+        Map json = JsonDecoder().convert(jsonString);
 
-        newsModel = MakeUpModel.fromJson(jsons[0]);
+        newsModel = MakeUpModel.fromJson(json);
       }
     } catch (ex) {
       //return newsModel;
