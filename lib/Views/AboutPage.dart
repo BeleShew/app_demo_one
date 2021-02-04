@@ -1,3 +1,4 @@
+import 'package:Flutter/Controller/CartController.dart';
 import 'package:Flutter/Controller/GetXDemoController.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -11,6 +12,7 @@ class AboutPage extends StatefulWidget {
 
 class _AboutPageState extends State<AboutPage> {
   final productList = Get.put(GetxDemoClass());
+  final cartController = Get.put(CartController());
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -56,13 +58,26 @@ class _AboutPageState extends State<AboutPage> {
                               ),
                               RaisedButton(
                                 onPressed: () {
-                                  // cartController
-                                  //  .addToCart(controller.products[index]);
+                                  cartController
+                                      .addToCart(controler.products[index]);
                                 },
                                 color: Colors.blue,
                                 textColor: Colors.white,
                                 child: Text('Add to Cart'),
                               ),
+                              Obx(
+                                () => IconButton(
+                                  icon: controler
+                                          .products[index].isFavorite.value
+                                      ? Icon(Icons.check_box_rounded)
+                                      : Icon(Icons
+                                          .check_box_outline_blank_outlined),
+                                  onPressed: () {
+                                    controler.products[index].isFavorite
+                                        .toggle();
+                                  },
+                                ),
+                              )
                             ],
                           ),
                         ),
@@ -71,7 +86,14 @@ class _AboutPageState extends State<AboutPage> {
                   );
                 },
               ),
-            )
+            ),
+            // GetX<CartController>(builder: (controller) {
+            //   return Text(
+            //     'Total amount: \$ ',
+            //     style: TextStyle(fontSize: 32, color: Colors.black),
+            //   );
+            // }),
+            // SizedBox(height: 50),
           ],
         ),
       ),
