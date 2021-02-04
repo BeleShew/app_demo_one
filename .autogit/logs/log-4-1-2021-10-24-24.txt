@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Thu Feb 04 2021 10:24:24 GMT+0300 (East Africa Time)
+------------------------------------------------------
+
+Modified files:
+* lib/Controller/GetXDemoController.dart
+* lib/Models/Product.dart
+* lib/Views/AboutPage.dart
+
+
+Created files:
+* .autogit/logs/log-4-1-2021-9-54-16.txt
+
+
+Deleted files:
+
+
+Renamed files:
