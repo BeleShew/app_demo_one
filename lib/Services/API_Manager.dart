@@ -6,18 +6,20 @@ import 'package:Flutter/Models/MakeUpModel.dart';
 class Api_Manager {
   Future<MakeUpModel> getMekups() async {
     var client = http.Client();
-    var newsModel;
+    var newsModel = null;
 
     try {
       var response = await client.get(keys.url);
       if (response.statusCode == 200) {
         var jsonString = response.body;
-        var jsonMap = json.decode(jsonString);
+        // var jsonMap = json.decode(jsonString);
+        List<dynamic> jsons = JsonDecoder().convert(jsonString);
 
-        newsModel = MakeUpModel.fromJson(jsonMap);
+        newsModel = MakeUpModel.fromJson(jsons[0]);
       }
-    } catch (Exception) {
-      return newsModel;
+    } catch (ex) {
+      //return newsModel;
+      print(ex);
     }
 
     return newsModel;

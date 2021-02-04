@@ -1,7 +1,6 @@
 import 'package:Flutter/Models/MakeUpModel.dart';
 import 'package:Flutter/Models/NoteModel.dart';
 import 'package:Flutter/Services/API_Manager.dart';
-import 'package:Flutter/Views/EditNote.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
