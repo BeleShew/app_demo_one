@@ -1,4 +1,5 @@
 import 'package:Flutter/Controller/CartController.dart';
+import 'package:Flutter/Controller/DialogController.dart';
 import 'package:Flutter/Controller/GetXDemoController.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -13,6 +14,7 @@ class AboutPage extends StatefulWidget {
 class _AboutPageState extends State<AboutPage> {
   final productList = Get.put(GetxDemoClass());
   final cartController = Get.put(CartController());
+  final dialogController = Get.put(DialogController());
   @override
   Widget build(BuildContext context) {
     return Scaffold(
