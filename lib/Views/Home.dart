@@ -44,8 +44,12 @@ class _HomeState extends State<Home> {
                   var mekupId = snapshoot.data;
                   return Container(
                     color: Colors.white60,
-                    child: Row(
-                      children: <Widget>[
+                    padding: EdgeInsets.only(
+                      top: 5,
+                    ),
+                    child:
+                        // Row(
+                        // children: <Widget>[
                         // Card(
                         //   clipBehavior: Clip.antiAlias,
                         //   shape: RoundedRectangleBorder(
@@ -58,44 +62,61 @@ class _HomeState extends State<Home> {
                         //   ),
                         // ),
                         Expanded(
-                          child: Card(
-                            clipBehavior: Clip.antiAlias,
-                            shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(5),
-                            ),
-                            child: Wrap(
-                              children: [
-                                //Flexible(
-                                // child:
-                                Column(
-                                  crossAxisAlignment: CrossAxisAlignment.start,
-                                  children: <Widget>[
-                                    Text(
-                                      mekupId[index].name,
-                                      overflow: TextOverflow.ellipsis,
-                                      style: TextStyle(
-                                        fontWeight: FontWeight.bold,
-                                        color: Colors.lightBlueAccent[400],
-                                        fontSize: 16,
-                                      ),
+                      child: Row(
+                        children: <Widget>[
+                          // Card(
+                          //   clipBehavior: Clip.antiAlias,
+                          //   shape: RoundedRectangleBorder(
+                          //     borderRadius: BorderRadius.circular(10),
+                          //   ),
+                          //   child: AspectRatio(
+                          //     aspectRatio: 1,
+                          //     child: Image.network(mekupId[index].imageLink,
+                          //         fit: BoxFit.cover),
+                          //   ),
+                          // ),
+                          Expanded(
+                            child: Card(
+                              shadowColor: Colors.blueAccent,
+                              margin: EdgeInsets.all(5),
+                              clipBehavior: Clip.antiAlias,
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(5),
+                              ),
+                              child: Wrap(
+                                children: [
+                                  Container(
+                                    padding: EdgeInsets.all(5.0),
+                                    child: Column(
+                                      crossAxisAlignment:
+                                          CrossAxisAlignment.start,
+                                      children: <Widget>[
+                                        Text(
+                                          mekupId[index].name,
+                                          style: TextStyle(
+                                            fontWeight: FontWeight.bold,
+                                            color: Colors.blue[800],
+                                            fontSize: 16,
+                                          ),
+                                        ),
+                                        Text(
+                                          mekupId[index].description,
+                                          style: TextStyle(
+                                            fontFamily: 'Norican',
+                                            fontSize: 16,
+                                          ),
+                                          overflow: TextOverflow.ellipsis,
+                                          maxLines: 3,
+                                        ),
+                                      ],
                                     ),
-                                    Text(
-                                      mekupId[index].productType,
-                                      maxLines: 3,
-                                      style: TextStyle(
-                                        fontFamily: 'Norican',
-                                        fontSize: 14,
-                                      ),
-                                      overflow: TextOverflow.ellipsis,
-                                    ),
-                                  ],
-                                ),
-                                //),
-                              ],
+                                  ),
+                                ],
+                              ),
                             ),
-                          ),
-                        )
-                      ],
+                          )
+                        ],
+                      ),
                     ),
                   );
                 },
