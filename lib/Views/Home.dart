@@ -44,7 +44,7 @@ class _HomeState extends State<Home> {
                   var mekupId = snapshoot.data;
                   return Container(
                     height: 50,
-                    color: Colors.amber,
+                    color: Colors.white60,
                     child: Row(
                       children: <Widget>[
                         Card(
@@ -59,10 +59,26 @@ class _HomeState extends State<Home> {
                           ),
                         ),
                         Card(
-                          child: Column(
-                            children: <Widget>[
-                              Text(mekupId[index].name),
-                              Text(mekupId[index].description),
+                          child: Wrap(
+                            children: [
+                              Flexible(
+                                child: Column(children: [
+                                  Wrap(
+                                    children: <Widget>[
+                                      Text(
+                                        mekupId[index].name,
+                                        overflow: TextOverflow.ellipsis,
+                                        softWrap: true,
+                                      ),
+                                      Text(
+                                        mekupId[index].description,
+                                        maxLines: 3,
+                                        overflow: TextOverflow.ellipsis,
+                                      ),
+                                    ],
+                                  ),
+                                ]),
+                              ),
                             ],
                           ),
                         )
