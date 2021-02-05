@@ -43,7 +43,7 @@ class _HomeState extends State<Home> {
                 itemBuilder: (context, index) {
                   var mekupId = snapshoot.data;
                   return Container(
-                    color: Colors.white60,
+                    color: Colors.blue[50],
                     padding: EdgeInsets.only(
                       top: 5,
                     ),
