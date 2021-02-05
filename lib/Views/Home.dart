@@ -43,43 +43,56 @@ class _HomeState extends State<Home> {
                 itemBuilder: (context, index) {
                   var mekupId = snapshoot.data;
                   return Container(
-                    height: 50,
                     color: Colors.white60,
                     child: Row(
                       children: <Widget>[
-                        Card(
-                          clipBehavior: Clip.antiAlias,
-                          shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(10),
-                          ),
-                          child: AspectRatio(
-                            aspectRatio: 1,
-                            child: Image.network(mekupId[index].imageLink,
-                                fit: BoxFit.cover),
-                          ),
-                        ),
-                        Card(
-                          child: Wrap(
-                            children: [
-                              Flexible(
-                                child: Column(children: [
-                                  Wrap(
-                                    children: <Widget>[
-                                      Text(
-                                        mekupId[index].name,
-                                        overflow: TextOverflow.ellipsis,
-                                        softWrap: true,
+                        // Card(
+                        //   clipBehavior: Clip.antiAlias,
+                        //   shape: RoundedRectangleBorder(
+                        //     borderRadius: BorderRadius.circular(10),
+                        //   ),
+                        //   child: AspectRatio(
+                        //     aspectRatio: 1,
+                        //     child: Image.network(mekupId[index].imageLink,
+                        //         fit: BoxFit.cover),
+                        //   ),
+                        // ),
+                        Expanded(
+                          child: Card(
+                            clipBehavior: Clip.antiAlias,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(5),
+                            ),
+                            child: Wrap(
+                              children: [
+                                //Flexible(
+                                // child:
+                                Column(
+                                  crossAxisAlignment: CrossAxisAlignment.start,
+                                  children: <Widget>[
+                                    Text(
+                                      mekupId[index].name,
+                                      overflow: TextOverflow.ellipsis,
+                                      style: TextStyle(
+                                        fontWeight: FontWeight.bold,
+                                        color: Colors.lightBlueAccent[400],
+                                        fontSize: 16,
                                       ),
-                                      Text(
-                                        mekupId[index].description,
-                                        maxLines: 3,
-                                        overflow: TextOverflow.ellipsis,
+                                    ),
+                                    Text(
+                                      mekupId[index].productType,
+                                      maxLines: 3,
+                                      style: TextStyle(
+                                        fontFamily: 'Norican',
+                                        fontSize: 14,
                                       ),
-                                    ],
-                                  ),
-                                ]),
-                              ),
-                            ],
+                                      overflow: TextOverflow.ellipsis,
+                                    ),
+                                  ],
+                                ),
+                                //),
+                              ],
+                            ),
                           ),
                         )
                       ],
