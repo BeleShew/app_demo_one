@@ -1,5 +1,5 @@
-
 import 'package:shared_preferences/shared_preferences.dart';
+
 class SharedPref {
   read(String key) async {
     final prefs = await SharedPreferences.getInstance();
@@ -8,7 +8,7 @@ class SharedPref {
 
   save(String key, value) async {
     final prefs = await SharedPreferences.getInstance();
-    prefs.setString(key, List<>);
+    prefs.setString(key, value);
   }
 
   remove(String key) async {

@@ -14,8 +14,8 @@ class Api_Manager {
       var sharedPrefResult = await sharedPref?.read(keys.sharedPreferenses);
       if (sharedPrefResult != null) {
         //var jsonString = sharedPref?.read(keys.sharedPreferenses);
-        //var jsonMap = json.decode(sharedPrefResult);
-        for (var items in sharedPrefResult) {
+        var jsonMap = json.decode(sharedPrefResult);
+        for (var items in jsonMap) {
           final mekups = new MakeUpModel(
             imageLink: items['image_link'],
             id: items['id'],
@@ -33,7 +33,7 @@ class Api_Manager {
         if (response.statusCode == 200) {
           var jsonString = response.body;
           var jsonMap = json.decode(jsonString);
-          await sharedPref.save(keys.sharedPreferenses, jsonMap);
+          await sharedPref.save(keys.sharedPreferenses, jsonString);
           for (var items in jsonMap) {
             final mekups = new MakeUpModel(
               imageLink: items['image_link'],
