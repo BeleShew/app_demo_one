@@ -87,28 +87,55 @@ class _HomeState extends State<Home> {
                                 children: [
                                   Container(
                                     padding: EdgeInsets.all(5.0),
-                                    child: Column(
-                                      crossAxisAlignment:
-                                          CrossAxisAlignment.start,
-                                      children: <Widget>[
-                                        Text(
-                                          mekupId[index].name,
-                                          style: TextStyle(
-                                            fontWeight: FontWeight.bold,
-                                            color: Colors.blue[800],
-                                            fontSize: 16,
+                                    child: Expanded(
+                                      child: Row(
+                                        children: [
+                                          Expanded(
+                                            child: Container(
+                                              width: 50,
+                                              child: Card(
+                                                clipBehavior: Clip.antiAlias,
+                                                shape: RoundedRectangleBorder(
+                                                  borderRadius:
+                                                      BorderRadius.circular(10),
+                                                ),
+                                                child: AspectRatio(
+                                                  aspectRatio: 1,
+                                                  child: Image.network(
+                                                      mekupId[index].imageLink,
+                                                      fit: BoxFit.cover),
+                                                ),
+                                              ),
+                                            ),
                                           ),
-                                        ),
-                                        Text(
-                                          mekupId[index].description,
-                                          style: TextStyle(
-                                            fontFamily: 'Norican',
-                                            fontSize: 16,
+                                          Expanded(
+                                            child: Column(
+                                              crossAxisAlignment:
+                                                  CrossAxisAlignment.start,
+                                              children: <Widget>[
+                                                Text(
+                                                  mekupId[index].name,
+                                                  style: TextStyle(
+                                                    fontWeight: FontWeight.bold,
+                                                    color: Colors.blue[800],
+                                                    fontSize: 16,
+                                                  ),
+                                                ),
+                                                Text(
+                                                  mekupId[index].description,
+                                                  style: TextStyle(
+                                                    fontFamily: 'Norican',
+                                                    fontSize: 14,
+                                                  ),
+                                                  overflow:
+                                                      TextOverflow.ellipsis,
+                                                  maxLines: 4,
+                                                ),
+                                              ],
+                                            ),
                                           ),
-                                          overflow: TextOverflow.ellipsis,
-                                          maxLines: 3,
-                                        ),
-                                      ],
+                                        ],
+                                      ),
                                     ),
                                   ),
                                 ],
