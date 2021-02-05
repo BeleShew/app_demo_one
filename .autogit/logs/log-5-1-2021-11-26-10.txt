@@ -1,0 +1,20 @@
+-------------------- Auto-Git Log --------------------
+		Fri Feb 05 2021 11:26:10 GMT+0300 (East Africa Time)
+------------------------------------------------------
+
+Modified files:
+* lib/Services/API_Manager.dart
+* lib/keys/keys.dart
+* pubspec.lock
+* pubspec.yaml
+
+
+Created files:
+* .autogit/logs/log-5-1-2021-10-56-2.txt
+* lib/Controller/SharedPref.dart
+
+
+Deleted files:
+
+
+Renamed files:
