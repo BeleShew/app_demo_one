@@ -48,19 +48,6 @@ class _HomeState extends State<Home> {
                       top: 5,
                     ),
                     child:
-                        // Row(
-                        // children: <Widget>[
-                        // Card(
-                        //   clipBehavior: Clip.antiAlias,
-                        //   shape: RoundedRectangleBorder(
-                        //     borderRadius: BorderRadius.circular(10),
-                        //   ),
-                        //   child: AspectRatio(
-                        //     aspectRatio: 1,
-                        //     child: Image.network(mekupId[index].imageLink,
-                        //         fit: BoxFit.cover),
-                        //   ),
-                        // ),
                         Expanded(
                       child: Row(
                         children: <Widget>[
