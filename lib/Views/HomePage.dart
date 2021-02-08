@@ -1,6 +1,7 @@
 import 'package:Flutter/Views/AboutPage.dart';
 import 'package:Flutter/Views/Home.dart';
 import 'package:Flutter/Views/LoginPage.dart';
+import 'package:Flutter/Views/MainNavigation.dart';
 import 'package:Flutter/Views/SettingsPage.dart';
 import 'package:flutter/material.dart';
 
@@ -36,6 +37,8 @@ class _HomePageState extends State<HomePage> {
       //   centerTitle: true,
       // ),
       // body: _children[_currentIndex],
+      drawer: MainNavigation(),
+
       body: _pageList[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
         currentIndex: _currentIndex,

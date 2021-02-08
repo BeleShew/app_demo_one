@@ -47,8 +47,7 @@ class _HomeState extends State<Home> {
                     padding: EdgeInsets.only(
                       top: 5,
                     ),
-                    child:
-                        Expanded(
+                    child: Expanded(
                       child: Row(
                         children: <Widget>[
                           // Card(
