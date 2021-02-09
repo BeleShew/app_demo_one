@@ -1,8 +1,9 @@
 import 'package:Flutter/Views/LoginPage.dart';
-import 'package:Flutter/Views/SettingsPage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+
+import 'GetXDemo/AllGetXComponents.dart';
 
 class MainNavigation extends StatelessWidget {
   @override
@@ -119,6 +120,16 @@ class MainNavigation extends StatelessWidget {
                   style: TextStyle(fontSize: 16),
                 ),
                 onTap: () {},
+              ),
+              ListTile(
+                leading: Icon(Icons.navigate_next_outlined),
+                title: Text(
+                  'GetX Demo',
+                  style: TextStyle(fontSize: 16),
+                ),
+                onTap: () {
+                  Get.to(GetXDemo());
+                },
               ),
             ],
           ),
