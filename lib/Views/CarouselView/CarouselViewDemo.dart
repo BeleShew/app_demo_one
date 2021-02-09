@@ -36,7 +36,19 @@ class _CarouselViewDemoState extends State<CarouselViewDemo> {
               ),
               items: [
                 Container(
+                  width: 300,
                   margin: EdgeInsets.all(5.0),
+                  child: Center(
+                    child: Expanded(
+                        child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      children: <Widget>[
+                        Text("First"),
+                        Text("Second"),
+                        Text("Third"),
+                      ],
+                    )),
+                  ),
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(10.0),
                     image: DecorationImage(
