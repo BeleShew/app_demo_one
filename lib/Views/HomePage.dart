@@ -37,7 +37,7 @@ class _HomePageState extends State<HomePage> {
       //   centerTitle: true,
       // ),
       // body: _children[_currentIndex],
-      // drawer: Drawer(),
+      //drawer: MainNavigation(),
 
       body: _pageList[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(

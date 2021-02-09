@@ -1,5 +1,7 @@
+import 'package:Flutter/Views/SettingsPage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:get/get.dart';
 
 class MainNavigation extends StatelessWidget {
   @override
@@ -38,79 +40,83 @@ class MainNavigation extends StatelessWidget {
               ),
             ),
           ),
-          ListTile(
-            leading: Icon(Icons.perm_identity),
-            title: Text(
-              'Profile',
-              style: TextStyle(fontSize: 16),
-            ),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(Icons.account_balance_outlined),
-            title: Text(
-              'Account Balance',
-              style: TextStyle(fontSize: 16),
-            ),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(Icons.settings),
-            title: Text(
-              'Settings',
-              style: TextStyle(fontSize: 16),
-            ),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(
-              Icons.logout,
-            ),
-            title: Text(
-              'Logout',
-              style: TextStyle(fontSize: 16),
-            ),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(Icons.info_outline),
-            title: Text(
-              'About',
-              style: TextStyle(fontSize: 16),
-            ),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(Icons.room_rounded),
-            title: Text(
-              'Location',
-              style: TextStyle(fontSize: 16),
-            ),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(Icons.label_off),
-            title: Text(
-              'No updates',
-              style: TextStyle(fontSize: 16),
-            ),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(Icons.add_alert),
-            title: Text(
-              'Updates',
-              style: TextStyle(fontSize: 16),
-            ),
-            onTap: () {},
-          ),
-          ListTile(
-            leading: Icon(Icons.home),
-            title: Text(
-              'Version',
-              style: TextStyle(fontSize: 16),
-            ),
-            onTap: () {},
+          Column(
+            children: [
+              ListTile(
+                leading: Icon(Icons.perm_identity),
+                title: Text(
+                  'Profile',
+                  style: TextStyle(fontSize: 16),
+                ),
+                onTap: () => Get.to(SettingsPage()),
+              ),
+              ListTile(
+                leading: Icon(Icons.account_balance_outlined),
+                title: Text(
+                  'Account Balance',
+                  style: TextStyle(fontSize: 16),
+                ),
+                onTap: () {},
+              ),
+              ListTile(
+                leading: Icon(Icons.settings),
+                title: Text(
+                  'Settings',
+                  style: TextStyle(fontSize: 16),
+                ),
+                onTap: () {},
+              ),
+              ListTile(
+                leading: Icon(
+                  Icons.logout,
+                ),
+                title: Text(
+                  'Logout',
+                  style: TextStyle(fontSize: 16),
+                ),
+                onTap: () {},
+              ),
+              ListTile(
+                leading: Icon(Icons.info_outline),
+                title: Text(
+                  'About',
+                  style: TextStyle(fontSize: 16),
+                ),
+                onTap: () {},
+              ),
+              ListTile(
+                leading: Icon(Icons.room_rounded),
+                title: Text(
+                  'Location',
+                  style: TextStyle(fontSize: 16),
+                ),
+                onTap: () {},
+              ),
+              ListTile(
+                leading: Icon(Icons.label_off),
+                title: Text(
+                  'No updates',
+                  style: TextStyle(fontSize: 16),
+                ),
+                onTap: () {},
+              ),
+              ListTile(
+                leading: Icon(Icons.add_alert),
+                title: Text(
+                  'Updates',
+                  style: TextStyle(fontSize: 16),
+                ),
+                onTap: () {},
+              ),
+              ListTile(
+                leading: Icon(Icons.home),
+                title: Text(
+                  'Version',
+                  style: TextStyle(fontSize: 16),
+                ),
+                onTap: () {},
+              ),
+            ],
           ),
         ],
       ),
