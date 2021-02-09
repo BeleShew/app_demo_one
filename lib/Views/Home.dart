@@ -4,6 +4,8 @@ import 'package:Flutter/Services/API_Manager.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
+import 'MainNavigation.dart';
+
 class Home extends StatefulWidget {
   State<StatefulWidget> createState() {
     return _HomeState();
@@ -33,6 +35,7 @@ class _HomeState extends State<Home> {
         title: Text('Home'),
         centerTitle: true,
       ),
+      drawer: MainNavigation(),
       body: Container(
         child: FutureBuilder<List<MakeUpModel>>(
           future: api_manager,

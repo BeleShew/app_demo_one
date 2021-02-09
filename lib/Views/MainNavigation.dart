@@ -29,7 +29,11 @@ class MainNavigation extends StatelessWidget {
                   Text(
                     'Belachew',
                     style: TextStyle(fontSize: 20, color: Colors.white),
-                  )
+                  ),
+                  Text(
+                    'bele@gmail.com',
+                    style: TextStyle(fontSize: 16, color: Colors.white),
+                  ),
                 ],
               ),
             ),
