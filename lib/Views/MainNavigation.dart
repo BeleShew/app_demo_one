@@ -1,3 +1,4 @@
+import 'package:Flutter/Views/LoginPage.dart';
 import 'package:Flutter/Views/SettingsPage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -43,13 +44,16 @@ class MainNavigation extends StatelessWidget {
           Column(
             children: [
               ListTile(
-                leading: Icon(Icons.perm_identity),
-                title: Text(
-                  'Profile',
-                  style: TextStyle(fontSize: 16),
-                ),
-                onTap: () => Get.to(SettingsPage()),
-              ),
+                  leading: Icon(Icons.perm_identity),
+                  title: Text(
+                    'Profile',
+                    style: TextStyle(fontSize: 16),
+                  ),
+                  onTap: () {
+                    Get.to(LoginPage());
+                    // Navigator.push(context,
+                    //     MaterialPageRoute(builder: (context) => LoginPage()));
+                  }),
               ListTile(
                 leading: Icon(Icons.account_balance_outlined),
                 title: Text(
