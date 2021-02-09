@@ -1,3 +1,4 @@
+import 'package:Flutter/Views/CarouselView/CarouselViewDemo.dart';
 import 'package:Flutter/Views/LoginPage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -129,6 +130,16 @@ class MainNavigation extends StatelessWidget {
                 ),
                 onTap: () {
                   Get.to(GetXDemo());
+                },
+              ),
+              ListTile(
+                leading: Icon(Icons.card_giftcard_outlined),
+                title: Text(
+                  'Carousel View',
+                  style: TextStyle(fontSize: 16),
+                ),
+                onTap: () {
+                  Get.to(CarouselViewDemo());
                 },
               ),
             ],
