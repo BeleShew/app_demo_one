@@ -9,6 +9,10 @@ class CarouselViewDemo extends StatefulWidget {
 class _CarouselViewDemoState extends State<CarouselViewDemo> {
   @override
   Widget build(BuildContext context) {
+    Widget image_Crousel = new Container(
+      height: 200,
+      //child:  Carousel(),
+    );
     return Scaffold(
       appBar: AppBar(
         title: Text('Carousel View'),
