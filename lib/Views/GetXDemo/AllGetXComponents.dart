@@ -37,7 +37,20 @@ class GetXDemo extends StatelessWidget {
     Get.snackbar(
       "",
       "",
-      mainButton: FlatButton(onPressed: () {}, child: Text("Ok")),
+      mainButton: FlatButton(
+          onPressed: () {},
+          child: Expanded(
+            child: Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: [
+                  Text("Ok"),
+                  Text("Cancel"),
+                ],
+              ),
+            ),
+          )),
       titleText: Text("SnackBar"),
       messageText: Text("First Snack Bar"),
       snackPosition: SnackPosition.BOTTOM,

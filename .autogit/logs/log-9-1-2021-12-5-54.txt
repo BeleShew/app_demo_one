@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Tue Feb 09 2021 12:05:54 GMT+0300 (East Africa Time)
+------------------------------------------------------
+
+Modified files:
+* lib/Views/GetXDemo/AllGetXComponents.dart
+* lib/Views/MainNavigation.dart
+
+
+Created files:
+* .autogit/logs/log-9-1-2021-11-35-41.txt
+
+
+Deleted files:
+
+
+Renamed files:
