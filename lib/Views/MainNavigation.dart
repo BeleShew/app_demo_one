@@ -1,3 +1,4 @@
+import 'package:Flutter/Views/CarouselView/CarouselPage.dart';
 import 'package:Flutter/Views/CarouselView/CarouselViewDemo.dart';
 import 'package:Flutter/Views/LoginPage.dart';
 import 'package:flutter/cupertino.dart';

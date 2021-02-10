@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Wed Feb 10 2021 09:44:32 GMT+0300 (East Africa Time)
+------------------------------------------------------
+
+Modified files:
+* lib/Views/CarouselView/CarouselViewDemo.dart
+
+
+Created files:
+* .autogit/logs/log-9-1-2021-17-37-37.txt
+* lib/Views/CarouselView/CarouselPage.dart
+
+
+Deleted files:
+
+
+Renamed files:
