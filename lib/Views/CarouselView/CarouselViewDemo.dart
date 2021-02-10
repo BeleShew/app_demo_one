@@ -1,3 +1,4 @@
+import 'package:carousel_pro/carousel_pro.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +12,17 @@ class _CarouselViewDemoState extends State<CarouselViewDemo> {
   Widget build(BuildContext context) {
     Widget image_Crousel = new Container(
       height: 200,
-      //child:  Carousel(),
+      child: Carousel(
+        boxFit: BoxFit.cover,
+        images: [
+          AssetImage("assets/images/imageOne.jpg"),
+          AssetImage("assets/images/raphael.jpg"),
+          AssetImage("assets/images/cat.jpg"),
+          AssetImage("assets/images/girls.jpg"),
+          AssetImage("assets/images/laptops.jpg"),
+          AssetImage("assets/images/coffe.jpg"),
+        ],
+      ),
     );
     return Scaffold(
       appBar: AppBar(
