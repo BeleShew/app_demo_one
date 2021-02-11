@@ -18,28 +18,14 @@ class _LoginPage extends State<LoginPage> {
     return ClipPath(
       clipper: TopWaveClipper(),
       child: Container(
-          decoration: BoxDecoration(
-            gradient: LinearGradient(
-                colors: orangeGradients,
-                begin: Alignment.topLeft,
-                end: Alignment.center),
-          ),
-          height: MediaQuery.of(context).size.height / 2.5,
-          child: Container(
-            padding: EdgeInsets.all(10),
-            decoration: ShapeDecoration(
-              shape: CircleBorder(),
-              gradient: LinearGradient(
-                  colors: orangeGradients,
-                  begin: Alignment.topLeft,
-                  end: Alignment.bottomRight),
-            ),
-            child: ImageIcon(
-              AssetImage("assets/images/cat.jpg"),
-              size: 40,
-              color: Colors.white,
-            ),
-          )),
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+              colors: orangeGradients,
+              begin: Alignment.topLeft,
+              end: Alignment.center),
+        ),
+        height: MediaQuery.of(context).size.height / 2.5,
+      ),
     );
   }
 }
