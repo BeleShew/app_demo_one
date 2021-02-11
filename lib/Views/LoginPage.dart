@@ -11,8 +11,24 @@ const List<Color> orangeGradients = [
   Color(0xFFFE8853),
   Color(0xFFFD7267),
 ];
+const List<Color> aquaGradients = [
+  Color(0xFF5AEAF1),
+  Color(0xFF8EF7DA),
+];
 
 class _LoginPage extends State<LoginPage> {
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text('Login'),
+        centerTitle: true,
+      ),
+    );
+  }
+}
+
+class WavyHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return ClipPath(
@@ -68,8 +84,5 @@ class TopWaveClipper extends CustomClipper<Path> {
   }
 
   @override
-  bool shouldReclip(covariant CustomClipper<Path> oldClipper) {
-    // TODO: implement shouldReclip
-    throw UnimplementedError();
-  }
+  bool shouldReclip(CustomClipper<Path> oldClipper) => false;
 }
