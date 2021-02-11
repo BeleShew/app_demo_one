@@ -45,21 +45,6 @@ class _LoginPage extends State<LoginPage> {
                   ),
                 ),
 
-                Container(
-                  padding: EdgeInsets.all(10),
-                  decoration: ShapeDecoration(
-                    shape: CircleBorder(),
-                    gradient: LinearGradient(
-                        colors: aquaGradients,
-                        begin: Alignment.topLeft,
-                        end: Alignment.bottomRight),
-                  ),
-                  child: ImageIcon(
-                    AssetImage("assets/images/cat.jpg"),
-                    size: 40,
-                    color: Colors.white,
-                  ),
-                )
                 // Stack(
                 //   alignment: Alignment.bottomLeft,
                 //   children: <Widget>[
