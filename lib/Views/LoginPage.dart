@@ -1,3 +1,4 @@
+import 'package:Flutter/Helper/roundedRectButton.dart';
 import 'package:flutter/material.dart';
 
 import 'InputWidget.dart';
@@ -47,7 +48,7 @@ class _LoginPage extends State<LoginPage> {
                   WavyHeader(),
                   new Container(
                     width: MediaQuery.of(context).size.width / 1.5,
-                    height: 192.0,
+                    height: 150.0,
                     decoration: new BoxDecoration(
                       shape: BoxShape.circle,
                       image: new DecorationImage(
@@ -76,32 +77,53 @@ class _LoginPage extends State<LoginPage> {
                                 fontSize: 16, color: Color(0xFF999A9A)),
                           ),
                         ),
-                        InputWidget(30.0, 0.0),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.end,
-                          crossAxisAlignment: CrossAxisAlignment.end,
+                        Stack(
+                          alignment: Alignment.bottomRight,
                           children: [
-                            Container(
-                              padding: EdgeInsets.all(10),
-                              decoration: ShapeDecoration(
-                                shape: CircleBorder(),
-                                gradient: LinearGradient(
-                                  colors: signInGradients,
-                                  begin: Alignment.topLeft,
-                                  end: Alignment.bottomRight,
+                            InputWidget(30.0, 0.0),
+                            Row(
+                              mainAxisAlignment: MainAxisAlignment.center,
+                              children: [
+                                Expanded(
+                                    child: Padding(
+                                  padding: EdgeInsets.only(top: 40),
+                                  child: Text(
+                                    'Enter your email to continue...',
+                                    textAlign: TextAlign.end,
+                                    style: TextStyle(
+                                        color: Color(0xFFA0A0A0), fontSize: 12),
+                                  ),
+                                )),
+                                Container(
+                                  padding: EdgeInsets.all(10),
+                                  decoration: ShapeDecoration(
+                                    shape: CircleBorder(),
+                                    gradient: LinearGradient(
+                                      colors: signInGradients,
+                                      begin: Alignment.topLeft,
+                                      end: Alignment.bottomRight,
+                                    ),
+                                  ),
+                                  child: Icon(
+                                    Icons.arrow_forward,
+                                    size: 40,
+                                    color: Colors.white,
+                                  ),
                                 ),
-                              ),
-                              child: Icon(
-                                Icons.arrow_forward,
-                                size: 40,
-                                color: Colors.white,
-                              ),
+                              ],
                             ),
                           ],
                         ),
                       ],
                     ),
-                  )
+                  ),
+                  // Padding(
+                  //   padding: EdgeInsets.only(bottom: 50),
+                  // ),
+                  roundedRectButton(
+                      "Let's get Started", signInGradients, false),
+                  roundedRectButton(
+                      "Create an Account", signUpGradients, false),
                 ],
               )
             ],
