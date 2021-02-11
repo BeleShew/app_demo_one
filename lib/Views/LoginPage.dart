@@ -77,6 +77,28 @@ class _LoginPage extends State<LoginPage> {
                           ),
                         ),
                         InputWidget(30.0, 0.0),
+                        Row(
+                          mainAxisAlignment: MainAxisAlignment.end,
+                          crossAxisAlignment: CrossAxisAlignment.end,
+                          children: [
+                            Container(
+                              padding: EdgeInsets.all(10),
+                              decoration: ShapeDecoration(
+                                shape: CircleBorder(),
+                                gradient: LinearGradient(
+                                  colors: signInGradients,
+                                  begin: Alignment.topLeft,
+                                  end: Alignment.bottomRight,
+                                ),
+                              ),
+                              child: Icon(
+                                Icons.arrow_forward,
+                                size: 40,
+                                color: Colors.white,
+                              ),
+                            ),
+                          ],
+                        ),
                       ],
                     ),
                   )

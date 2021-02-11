@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Thu Feb 11 2021 14:52:13 GMT+0300 (East Africa Time)
+------------------------------------------------------
+
+Modified files:
+* lib/Views/InputWidget.dart
+* lib/Views/LoginPage.dart
+
+
+Created files:
+* .autogit/logs/log-11-1-2021-14-22-7.txt
+
+
+Deleted files:
+
+
+Renamed files:
