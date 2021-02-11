@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Thu Feb 11 2021 15:52:33 GMT+0300 (East Africa Time)
+------------------------------------------------------
+
+Modified files:
+* lib/Views/LoginPage.dart
+
+
+Created files:
+* .autogit/logs/log-11-1-2021-15-22-24.txt
+* lib/Helper/roundedRectButton.dart
+
+
+Deleted files:
+
+
+Renamed files:
+* [object Object]

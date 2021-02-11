@@ -1,7 +1,6 @@
+import 'package:Flutter/Helper/InputWidget.dart';
 import 'package:Flutter/Helper/roundedRectButton.dart';
 import 'package:flutter/material.dart';
-
-import 'InputWidget.dart';
 
 class LoginPage extends StatefulWidget {
   State<StatefulWidget> createState() {
@@ -80,7 +79,7 @@ class _LoginPage extends State<LoginPage> {
                         Stack(
                           alignment: Alignment.bottomRight,
                           children: [
-                            InputWidget(30.0, 0.0),
+                            InputWidget(30.0, 0.0, "Beleshewa@gmail.com"),
                             Row(
                               mainAxisAlignment: MainAxisAlignment.center,
                               children: [
