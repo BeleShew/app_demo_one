@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'InputWidget.dart';
+
 class LoginPage extends StatefulWidget {
   State<StatefulWidget> createState() {
     return _LoginPage();
@@ -15,47 +17,73 @@ const List<Color> aquaGradients = [
   Color(0xFF5AEAF1),
   Color(0xFF8EF7DA),
 ];
+const List<Color> signInGradients = [
+  Color(0xFF0EDED2),
+  Color(0xFF03A0FE),
+];
+
+const List<Color> signUpGradients = [
+  Color(0xFFFF9945),
+  Color(0xFFFc6076),
+];
 
 class _LoginPage extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+        resizeToAvoidBottomPadding: false,
+        backgroundColor: Colors.white,
         appBar: AppBar(
           title: Text('Login'),
           centerTitle: true,
         ),
-        body: Column(
-          children: <Widget>[
-            new Stack(
-              alignment: Alignment.bottomCenter,
-              children: <Widget>[
-                //Image.asset('assets/collaboration.png', width: MediaQuery.of(context).size.width/1.5,),
-                WavyHeader(),
-                new Container(
-                  width: MediaQuery.of(context).size.width / 1.5,
-                  height: 192.0,
-                  decoration: new BoxDecoration(
-                    shape: BoxShape.circle,
-                    image: new DecorationImage(
-                      fit: BoxFit.fill,
-                      image: new AssetImage(
-                        "assets/images/cat.jpg",
+        body: SingleChildScrollView(
+          child: Column(
+            children: <Widget>[
+              new Stack(
+                alignment: Alignment.bottomCenter,
+                children: <Widget>[
+                  //Image.asset('assets/collaboration.png', width: MediaQuery.of(context).size.width/1.5,),
+                  WavyHeader(),
+                  new Container(
+                    width: MediaQuery.of(context).size.width / 1.5,
+                    height: 192.0,
+                    decoration: new BoxDecoration(
+                      shape: BoxShape.circle,
+                      image: new DecorationImage(
+                        fit: BoxFit.fill,
+                        image: new AssetImage(
+                          "assets/images/cat.jpg",
+                        ),
                       ),
                     ),
                   ),
-                ),
-
-                // Stack(
-                //   alignment: Alignment.bottomLeft,
-                //   children: <Widget>[
-                //     WavyFooter(),
-                //     CirclePink(),
-                //     CircleYellow(),
-                //   ],
-                // )
-              ],
-            ),
-          ],
+                ],
+              ),
+              Column(
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.all(8.0),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.center,
+                      crossAxisAlignment: CrossAxisAlignment.start,
+                      children: <Widget>[
+                        Padding(
+                          padding: EdgeInsets.only(left: 40, bottom: 10),
+                          child: Text(
+                            "Email",
+                            style: TextStyle(
+                                fontSize: 16, color: Color(0xFF999A9A)),
+                          ),
+                        ),
+                        InputWidget(30.0, 0.0),
+                      ],
+                    ),
+                  )
+                ],
+              )
+            ],
+          ),
         ));
   }
 }
