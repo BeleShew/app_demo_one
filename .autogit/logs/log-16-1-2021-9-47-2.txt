@@ -1,0 +1,18 @@
+-------------------- Auto-Git Log --------------------
+		Tue Feb 16 2021 09:47:02 GMT+0300 (East Africa Time)
+------------------------------------------------------
+
+Modified files:
+* lib/Helper/HUD/BmProgresshud.dart
+* lib/Views/MainNavigation.dart
+
+
+Created files:
+* .autogit/logs/log-16-1-2021-9-16-41.txt
+* lib/Helper/HUD/CustomHUD.dart
+
+
+Deleted files:
+
+
+Renamed files:
