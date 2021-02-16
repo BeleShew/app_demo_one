@@ -27,7 +27,7 @@ class _SettingsPage extends State<SettingsPage> {
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
-          child: Center(
+          child: SingleChildScrollView(
             child: Column(
               children: [
                 Text("Count"),

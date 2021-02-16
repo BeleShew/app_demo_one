@@ -1,9 +1,9 @@
-import 'package:carousel_pro/carousel_pro.dart';
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:flutter/material.dart';
 
 class CarouselPage extends StatelessWidget {
-  List image_Crousel = [
+  // ignore: non_constant_identifier_names
+  final List image_crousel = [
     "assets/images/imageOne.jpg",
     "assets/images/raphael.jpg",
     "assets/images/cat.jpg",
@@ -40,7 +40,7 @@ class CarouselPage extends StatelessWidget {
                 autoPlayCurve: Curves.fastOutSlowIn,
                 scrollDirection: Axis.horizontal,
               ),
-              items: image_Crousel.map(
+              items: image_crousel.map(
                 (imagebuilder) {
                   return Builder(builder: (BuildContext context) {
                     return Container(

@@ -26,6 +26,7 @@ dependencies:
   shared_preferences: ^0.5.12+4
   carousel_slider: ^3.0.0
   carousel_pro: ^1.0.0
+  bmprogresshud: ^0.0.10
   
   flutter:
     sdk: flutter

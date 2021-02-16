@@ -37,95 +37,98 @@ class _LoginPage extends State<LoginPage> {
           title: Text('Login'),
           centerTitle: true,
         ),
-        body: SingleChildScrollView(
-          child: Column(
-            children: <Widget>[
-              new Stack(
-                alignment: Alignment.bottomCenter,
-                children: <Widget>[
-                  //Image.asset('assets/collaboration.png', width: MediaQuery.of(context).size.width/1.5,),
-                  WavyHeader(),
-                  new Container(
-                    width: MediaQuery.of(context).size.width / 1.5,
-                    height: 150.0,
-                    decoration: new BoxDecoration(
-                      shape: BoxShape.circle,
-                      image: new DecorationImage(
-                        fit: BoxFit.fill,
-                        image: new AssetImage(
-                          "assets/images/cat.jpg",
+        body: SafeArea(
+          child: SingleChildScrollView(
+            child: Column(
+              children: <Widget>[
+                new Stack(
+                  alignment: Alignment.bottomCenter,
+                  children: <Widget>[
+                    //Image.asset('assets/collaboration.png', width: MediaQuery.of(context).size.width/1.5,),
+                    WavyHeader(),
+                    new Container(
+                      width: MediaQuery.of(context).size.width / 1.5,
+                      height: 150.0,
+                      decoration: new BoxDecoration(
+                        shape: BoxShape.circle,
+                        image: new DecorationImage(
+                          fit: BoxFit.fill,
+                          image: new AssetImage(
+                            "assets/images/cat.jpg",
+                          ),
                         ),
                       ),
                     ),
-                  ),
-                ],
-              ),
-              Column(
-                children: <Widget>[
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: <Widget>[
-                        Padding(
-                          padding: EdgeInsets.only(left: 40, bottom: 10),
-                          child: Text(
-                            "Email",
-                            style: TextStyle(
-                                fontSize: 16, color: Color(0xFF999A9A)),
+                  ],
+                ),
+                Column(
+                  children: <Widget>[
+                    Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: Column(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        crossAxisAlignment: CrossAxisAlignment.start,
+                        children: <Widget>[
+                          Padding(
+                            padding: EdgeInsets.only(left: 40, bottom: 10),
+                            child: Text(
+                              "Email",
+                              style: TextStyle(
+                                  fontSize: 16, color: Color(0xFF999A9A)),
+                            ),
                           ),
-                        ),
-                        Stack(
-                          alignment: Alignment.bottomRight,
-                          children: [
-                            InputWidget(30.0, 0.0, "Beleshewa@gmail.com"),
-                            Row(
-                              mainAxisAlignment: MainAxisAlignment.center,
-                              children: [
-                                Expanded(
-                                    child: Padding(
-                                  padding: EdgeInsets.only(top: 40),
-                                  child: Text(
-                                    'Enter your email to continue...',
-                                    textAlign: TextAlign.end,
-                                    style: TextStyle(
-                                        color: Color(0xFFA0A0A0), fontSize: 12),
-                                  ),
-                                )),
-                                Container(
-                                  padding: EdgeInsets.all(10),
-                                  decoration: ShapeDecoration(
-                                    shape: CircleBorder(),
-                                    gradient: LinearGradient(
-                                      colors: signInGradients,
-                                      begin: Alignment.topLeft,
-                                      end: Alignment.bottomRight,
+                          Stack(
+                            alignment: Alignment.bottomRight,
+                            children: [
+                              InputWidget(30.0, 0.0, "Beleshewa@gmail.com"),
+                              Row(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  Expanded(
+                                      child: Padding(
+                                    padding: EdgeInsets.only(top: 40),
+                                    child: Text(
+                                      'Enter your email to continue...',
+                                      textAlign: TextAlign.end,
+                                      style: TextStyle(
+                                          color: Color(0xFFA0A0A0),
+                                          fontSize: 12),
+                                    ),
+                                  )),
+                                  Container(
+                                    padding: EdgeInsets.all(10),
+                                    decoration: ShapeDecoration(
+                                      shape: CircleBorder(),
+                                      gradient: LinearGradient(
+                                        colors: signInGradients,
+                                        begin: Alignment.topLeft,
+                                        end: Alignment.bottomRight,
+                                      ),
+                                    ),
+                                    child: Icon(
+                                      Icons.arrow_forward,
+                                      size: 40,
+                                      color: Colors.white,
                                     ),
                                   ),
-                                  child: Icon(
-                                    Icons.arrow_forward,
-                                    size: 40,
-                                    color: Colors.white,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
-                        ),
-                      ],
+                                ],
+                              ),
+                            ],
+                          ),
+                        ],
+                      ),
                     ),
-                  ),
-                  // Padding(
-                  //   padding: EdgeInsets.only(bottom: 50),
-                  // ),
-                  roundedRectButton(
-                      "Let's get Started", signInGradients, false),
-                  roundedRectButton(
-                      "Create an Account", signUpGradients, false),
-                ],
-              )
-            ],
+                    // Padding(
+                    //   padding: EdgeInsets.only(bottom: 50),
+                    // ),
+                    roundedRectButton(
+                        "Let's get Started", signInGradients, false),
+                    roundedRectButton(
+                        "Create an Account", signUpGradients, false),
+                  ],
+                )
+              ],
+            ),
           ),
         ));
   }
