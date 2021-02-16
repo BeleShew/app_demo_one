@@ -1,0 +1,21 @@
+-------------------- Auto-Git Log --------------------
+		Tue Feb 16 2021 09:16:41 GMT+0300 (East Africa Time)
+------------------------------------------------------
+
+Modified files:
+* lib/Views/CarouselView/CarouselPage.dart
+* lib/Views/LoginPage.dart
+* lib/Views/SettingsPage.dart
+* pubspec.lock
+* pubspec.yaml
+
+
+Created files:
+* .autogit/logs/log-16-1-2021-8-21-42.txt
+* lib/Helper/HUD/BmProgresshud.dart
+
+
+Deleted files:
+
+
+Renamed files:

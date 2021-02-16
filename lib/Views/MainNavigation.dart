@@ -1,3 +1,4 @@
+import 'package:Flutter/Helper/HUD/BmProgresshud.dart';
 import 'package:Flutter/Views/CarouselView/CarouselPage.dart';
 import 'package:Flutter/Views/CarouselView/CarouselViewDemo.dart';
 import 'package:Flutter/Views/LoginPage.dart';
@@ -141,6 +142,16 @@ class MainNavigation extends StatelessWidget {
                 ),
                 onTap: () {
                   Get.to(CarouselViewDemo());
+                },
+              ),
+              ListTile(
+                leading: Icon(Icons.card_giftcard_outlined),
+                title: Text(
+                  'HUD',
+                  style: TextStyle(fontSize: 16),
+                ),
+                onTap: () {
+                  Get.to(BmProgresshud());
                 },
               ),
             ],
