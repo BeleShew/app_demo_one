@@ -1,0 +1,22 @@
+-------------------- Auto-Git Log --------------------
+		Wed Feb 17 2021 17:53:36 GMT+0300 (East Africa Time)
+------------------------------------------------------
+
+Modified files:
+* android/app/build.gradle
+* android/build.gradle
+* lib/main.dart
+* pubspec.lock
+* pubspec.yaml
+
+
+Created files:
+* .autogit/logs/log-17-1-2021-16-42-35.txt
+* .vscode/c_cpp_properties.json
+* android/app/google-services.json
+
+
+Deleted files:
+
+
+Renamed files:

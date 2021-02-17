@@ -1,6 +1,7 @@
 import 'package:Flutter/Models/MakeUpModel.dart';
 import 'package:Flutter/Models/NoteModel.dart';
 import 'package:Flutter/Services/API_Manager.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
@@ -21,10 +22,12 @@ class _HomeState extends State<Home> {
     new NoteModel("5", "Fifth List", "This is the Fifth List", "5/20/2021"),
   ];
   Future<List<MakeUpModel>> api_manager;
+
   @override
   void initState() {
     api_manager = Api_Manager().getMekups();
-
+    WidgetsFlutterBinding.ensureInitialized();
+    final Future<FirebaseApp> _firebaseApp = Firebase.initializeApp();
     super.initState();
   }
 
