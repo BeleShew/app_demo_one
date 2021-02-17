@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Wed Feb 17 2021 18:23:43 GMT+0300 (East Africa Time)
+------------------------------------------------------
+
+Modified files:
+* lib/Views/Home.dart
+
+
+Created files:
+* .autogit/logs/log-17-1-2021-17-53-36.txt
+
+
+Deleted files:
+
+
+Renamed files:
