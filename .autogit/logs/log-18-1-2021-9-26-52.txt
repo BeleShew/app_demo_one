@@ -1,0 +1,19 @@
+-------------------- Auto-Git Log --------------------
+		Thu Feb 18 2021 09:26:52 GMT+0300 (East Africa Time)
+------------------------------------------------------
+
+Modified files:
+* android/build.gradle
+* pubspec.lock
+* pubspec.yaml
+
+
+Created files:
+* .autogit/logs/log-18-1-2021-8-56-39.txt
+* lib/Views/Firbase/FireBaseDemo.dart
+
+
+Deleted files:
+
+
+Renamed files:
