@@ -27,7 +27,7 @@ class _HomeState extends State<Home> {
   void initState() {
     api_manager = Api_Manager().getMekups();
     WidgetsFlutterBinding.ensureInitialized();
-    final Future<FirebaseApp> _firebaseApp = Firebase.initializeApp();
+    //final Future<FirebaseApp> _firebaseApp = Firebase.initializeApp();
     super.initState();
   }
 
