@@ -29,6 +29,7 @@ dependencies:
   bmprogresshud: ^0.0.10
   firebase_core: ^0.7.0
   firebase_database: ^6.0.0
+  firebase_auth: ^0.20.0+1
   
   flutter:
     sdk: flutter
