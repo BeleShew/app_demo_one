@@ -1,0 +1,16 @@
+-------------------- Auto-Git Log --------------------
+		Fri Feb 19 2021 11:17:47 GMT+0300 (East Africa Time)
+------------------------------------------------------
+
+Modified files:
+
+
+Created files:
+* .autogit/logs/log-19-1-2021-10-47-30.txt
+* lib/Services/AuthServices.dart
+
+
+Deleted files:
+
+
+Renamed files:
