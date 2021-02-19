@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Fri Feb 19 2021 14:51:15 GMT+0300 (East Africa Time)
+------------------------------------------------------
+
+Modified files:
+* lib/Services/AuthServices.dart
+* lib/Views/Firbase/FireBaseDemo.dart
+
+
+Created files:
+* .autogit/logs/log-19-1-2021-14-21-5.txt
+
+
+Deleted files:
+
+
+Renamed files:
