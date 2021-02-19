@@ -1,6 +1,7 @@
 import 'package:Flutter/Helper/HUD/BmProgresshud.dart';
 import 'package:Flutter/Views/CarouselView/CarouselPage.dart';
 import 'package:Flutter/Views/CarouselView/CarouselViewDemo.dart';
+import 'package:Flutter/Views/Firbase/FireBaseDemo.dart';
 import 'package:Flutter/Views/LoginPage.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
@@ -152,6 +153,16 @@ class MainNavigation extends StatelessWidget {
                 ),
                 onTap: () {
                   Get.to(BmProgresshud());
+                },
+              ),
+              ListTile(
+                leading: Icon(Icons.fiber_new_sharp),
+                title: Text(
+                  'FireBase Demo',
+                  style: TextStyle(fontSize: 16),
+                ),
+                onTap: () {
+                  Get.to(FireBaseDemoApp());
                 },
               ),
             ],
