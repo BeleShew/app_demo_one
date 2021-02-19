@@ -11,7 +11,7 @@ class _FireBaseAppState extends State<FireBaseDemoApp> {
   final AuthServices _authServices = AuthServices();
 
   @override
-  Future<void> initState() async {
+  void initState() {
     // WidgetsFlutterBinding.ensureInitialized();
     // await Firebase.initializeApp();
 
@@ -25,6 +25,19 @@ class _FireBaseAppState extends State<FireBaseDemoApp> {
         title: Text("Firbase"),
         backgroundColor: Colors.green,
         centerTitle: true,
+        actions: <Widget>[
+          FlatButton.icon(
+            onPressed: () {},
+            icon: Icon(
+              Icons.person,
+              color: Colors.white,
+            ),
+            label: Text(
+              "Logout",
+              style: TextStyle(color: Colors.white, fontSize: 14),
+            ),
+          )
+        ],
       ),
       body: SafeArea(
         child: Container(
@@ -36,6 +49,7 @@ class _FireBaseAppState extends State<FireBaseDemoApp> {
               if (result == null) {
                 print("Not Sign In");
               } else {
+                print("Sign in Success");
                 print("Sign in Success");
               }
             },
