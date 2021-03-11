@@ -1,0 +1,20 @@
+-------------------- Auto-Git Log --------------------
+		Thu Mar 11 2021 12:02:42 GMT+0300 (East Africa Time)
+------------------------------------------------------
+
+Modified files:
+* lib/Views/Home.dart
+* lib/Views/LoginPage.dart
+* lib/Views/SettingsPage.dart
+* pubspec.lock
+* pubspec.yaml
+
+
+Created files:
+* .autogit/logs/log-11-2-2021-11-0-46.txt
+
+
+Deleted files:
+
+
+Renamed files:
