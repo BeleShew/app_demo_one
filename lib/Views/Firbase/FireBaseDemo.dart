@@ -1,5 +1,4 @@
 import 'package:Flutter/Services/AuthServices.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
 class FireBaseDemoApp extends StatefulWidget {
