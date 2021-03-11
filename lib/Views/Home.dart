@@ -1,7 +1,6 @@
 import 'package:Flutter/Models/MakeUpModel.dart';
 import 'package:Flutter/Models/NoteModel.dart';
 import 'package:Flutter/Services/API_Manager.dart';
-import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 

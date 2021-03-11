@@ -23,6 +23,22 @@ class _SettingsPage extends State<SettingsPage> {
       appBar: AppBar(
         title: Text('Settings'),
         centerTitle: true,
+        actions: <Widget>[
+          PopupMenuButton(
+            itemBuilder: (BuildContext context) {
+              return [
+                PopupMenuItem(
+                  child: IconButton(
+                    icon: Icon(Icons.email),
+                    onPressed: () {
+                      //clicked(context, "Email sent");
+                    },
+                  ),
+                ),
+              ];
+            },
+          ),
+        ],
       ),
       body: SafeArea(
         child: Padding(

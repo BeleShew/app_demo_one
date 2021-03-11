@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Thu Mar 11 2021 11:00:46 GMT+0300 (East Africa Time)
+------------------------------------------------------
+
+Modified files:
+* lib/Views/Firbase/FireBaseDemo.dart
+* pubspec.yaml
+
+
+Created files:
+* .autogit/logs/log-11-2-2021-10-30-40.txt
+
+
+Deleted files:
+
+
+Renamed files:
