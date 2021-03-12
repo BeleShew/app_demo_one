@@ -28,11 +28,15 @@ class _SettingsPage extends State<SettingsPage> {
             itemBuilder: (BuildContext context) {
               return [
                 PopupMenuItem(
-                  child: IconButton(
-                    icon: Icon(Icons.email),
-                    onPressed: () {
-                      //clicked(context, "Email sent");
-                    },
+                  child: Center(
+                    child: Column(
+                      children: <Widget>[
+                        Text("Logout"),
+                        Text("Language"),
+                        Text("About"),
+                        Text("Link"),
+                      ],
+                    ),
                   ),
                 ),
               ];
@@ -127,4 +131,6 @@ class _SettingsPage extends State<SettingsPage> {
       ),
     );
   }
+
+  void clicked(BuildContext context, String s) {}
 }
