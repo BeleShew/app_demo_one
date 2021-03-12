@@ -2,10 +2,9 @@ import 'package:Flutter/Models/Product.dart';
 import 'package:get/state_manager.dart';
 
 class GetxDemoClass extends GetxController {
-  var products = List<Product>().obs;
+  var products = <Product>[].obs;
   @override
   void onInit() {
-    // TODO: implement onInit
     super.onInit();
     feachProducts();
   }
