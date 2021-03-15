@@ -58,6 +58,9 @@ class _SettingsPage extends State<SettingsPage> {
             onSelected: (value) {
               print("value:$value");
             },
+            onCanceled: () {
+              print("value:");
+            },
           ),
         ],
       ),
