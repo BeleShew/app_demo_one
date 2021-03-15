@@ -4,6 +4,8 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
+import 'PopUpMenu/Popupmenuoption.dart';
+
 class SettingsPage extends StatefulWidget {
   State<StatefulWidget> createState() {
     return _SettingsPage();
@@ -21,49 +23,50 @@ class _SettingsPage extends State<SettingsPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Settings'),
-        centerTitle: true,
-        actions: <Widget>[
-          PopupMenuButton(
-            itemBuilder: (BuildContext context) {
-              return [
-                PopupMenuItem(
-                  child: Center(
-                    child: Column(
-                      children: <Widget>[
-                        Padding(
-                          padding: const EdgeInsets.only(top: 8.0),
-                          child: Text("Logout"),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(top: 8.0),
-                          child: Text(
-                            "Language",
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(top: 8.0),
-                          child: Text("About"),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(top: 8.0),
-                          child: Text("Link"),
-                        ),
-                      ],
-                    ),
-                  ),
-                ),
-              ];
-            },
-            onSelected: (value) {
-              print("value:$value");
-            },
-            onCanceled: () {
-              print("value:");
-            },
+          title: Text('Settings'),
+          centerTitle: true,
+          actions: <Widget>[PopupMenuOption()]
+          // <Widget>[
+          //   PopupMenuButton(
+          //     itemBuilder: (BuildContext context) {
+          //       return [
+          //         PopupMenuItem(
+          //           child: Center(
+          //             child: Column(
+          //               children: <Widget>[
+          //                 Padding(
+          //                   padding: const EdgeInsets.only(top: 8.0),
+          //                   child: Text("Logout"),
+          //                 ),
+          //                 Padding(
+          //                   padding: const EdgeInsets.only(top: 8.0),
+          //                   child: Text(
+          //                     "Language",
+          //                   ),
+          //                 ),
+          //                 Padding(
+          //                   padding: const EdgeInsets.only(top: 8.0),
+          //                   child: Text("About"),
+          //                 ),
+          //                 Padding(
+          //                   padding: const EdgeInsets.only(top: 8.0),
+          //                   child: Text("Link"),
+          //                 ),
+          //               ],
+          //             ),
+          //           ),
+          //         ),
+          //       ];
+          //     },
+          //     onSelected: (value) {
+          //       print("value:$value");
+          //     },
+          //     onCanceled: () {
+          //       print("value:");
+          //     },
+          //   ),
+          // ],
           ),
-        ],
-      ),
       body: SafeArea(
         child: Padding(
           padding: const EdgeInsets.all(8.0),
