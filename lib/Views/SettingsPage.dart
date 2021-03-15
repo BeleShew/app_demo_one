@@ -31,15 +31,32 @@ class _SettingsPage extends State<SettingsPage> {
                   child: Center(
                     child: Column(
                       children: <Widget>[
-                        Text("Logout"),
-                        Text("Language"),
-                        Text("About"),
-                        Text("Link"),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 8.0),
+                          child: Text("Logout"),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 8.0),
+                          child: Text(
+                            "Language",
+                          ),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 8.0),
+                          child: Text("About"),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(top: 8.0),
+                          child: Text("Link"),
+                        ),
                       ],
                     ),
                   ),
                 ),
               ];
+            },
+            onSelected: (value) {
+              print("value:$value");
             },
           ),
         ],
