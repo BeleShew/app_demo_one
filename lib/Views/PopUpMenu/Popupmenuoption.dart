@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-enum MenuOption { Send, Draft, Discard }
+enum MenuOption { Send, Draft, Discard, Language }
 
 //String _selectedItem = 'Sun';
 class PopupMenuOption extends StatelessWidget {
@@ -11,31 +11,25 @@ class PopupMenuOption extends StatelessWidget {
       itemBuilder: (BuildContext context) {
         return <PopupMenuEntry<MenuOption>>[
           PopupMenuItem(
-            //child: Text("Send"),
-            child: Icon(
-              Icons.send,
-              color: Colors.black,
-              size: 28,
-            ),
+            child: Text("Send"),
+            // child: Icon(
+            //   Icons.send,
+            //   color: Colors.black,
+            //   size: 28,
+            // ),
             value: MenuOption.Send,
           ),
           PopupMenuItem(
-            //child: Text("Draft"),
-            child: Icon(
-              Icons.drafts,
-              color: Colors.black,
-              size: 28,
-            ),
+            child: Text("Draft"),
             value: MenuOption.Draft,
           ),
           PopupMenuItem(
-            //child: Text("Discard"),
-            child: Icon(
-              Icons.cancel,
-              color: Colors.black,
-              size: 28,
-            ),
+            child: Text("Discard"),
             value: MenuOption.Discard,
+          ),
+          PopupMenuItem(
+            child: Text("Language"),
+            value: MenuOption.Language,
           ),
         ];
       },

@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Mon Mar 15 2021 16:40:39 GMT+0300 (East Africa Time)
+------------------------------------------------------
+
+Modified files:
+* lib/Views/SettingsPage.dart
+
+
+Created files:
+* .autogit/logs/log-15-2-2021-15-43-35.txt
+* lib/Views/PopUpMenu/Popupmenuoption.dart
+
+
+Deleted files:
+
+
+Renamed files:

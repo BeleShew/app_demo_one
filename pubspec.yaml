@@ -21,17 +21,17 @@ environment:
   sdk: ">=2.7.0 <3.0.0"
 
 dependencies:
-  http: ^0.12.2
+  http: ^0.13.0
   get: ^3.24.0
-  shared_preferences: ^0.5.12+4
+  shared_preferences: ^2.0.4
   carousel_slider: ^3.0.0
   carousel_pro: ^1.0.0
   bmprogresshud: ^0.0.10
-  firebase_core: ^0.7.0
+  firebase_core: ^1.0.1
   firebase_database: ^6.0.0
-  firebase_auth: ^0.20.0+1
-  cloud_firestore: ^0.16.0
-
+  firebase_auth: ^1.0.1
+  cloud_firestore: ^1.0.1
+  easy_localization: ^3.0.0
 
   flutter:
     sdk: flutter
