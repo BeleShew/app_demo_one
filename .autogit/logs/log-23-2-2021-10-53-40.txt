@@ -1,0 +1,17 @@
+-------------------- Auto-Git Log --------------------
+		Tue Mar 23 2021 10:53:40 GMT+0300 (East Africa Time)
+------------------------------------------------------
+
+Modified files:
+* lib/Services/API_Manager.dart
+
+
+Created files:
+* .autogit/logs/log-16-2-2021-14-59-14.txt
+* assets/images/translations/en-US.json
+
+
+Deleted files:
+
+
+Renamed files:
