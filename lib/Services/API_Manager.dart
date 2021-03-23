@@ -29,7 +29,7 @@ class Api_Manager {
           newsModel.add(mekups);
         }
       } else {
-        var response = await client.get(keys.url);
+        var response = await client.get(Uri.parse(keys.url));
         if (response.statusCode == 200) {
           var jsonString = response.body;
           var jsonMap = json.decode(jsonString);
